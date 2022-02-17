@@ -4,6 +4,7 @@ import CartSummary from './CartSummary'
 import SignedIn from './SignedIn'
 import SignedOut from './SignedOut'
 
+
 export default function Navi() {
   const [isAuthenticated, setIsAuthenticated] = useState(true)
 
@@ -20,7 +21,7 @@ export default function Navi() {
       <Menu inverted fixed size='small'>
         <Container>
           <Menu.Item 
-            name='Anasayfa'
+            name='Anasayfa' 
           />
           <Menu.Item
             name='Kampanyalar'

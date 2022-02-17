@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dropdown } from 'semantic-ui-react'
+import { Button, Dropdown } from 'semantic-ui-react'
 
 export default function CartSummary() {
   return (
@@ -9,6 +9,7 @@ export default function CartSummary() {
               <Dropdown.Item></Dropdown.Item>
               <Dropdown.Item></Dropdown.Item>
               <Dropdown.Item></Dropdown.Item>
+              <Button color='blue'>Sepete Git</Button>
             </Dropdown.Menu>
           </Dropdown>
     </div>
