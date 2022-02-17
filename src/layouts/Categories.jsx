@@ -3,9 +3,9 @@ import { Menu } from 'semantic-ui-react'
 
 export default function Categories() {
     return (
-        <div>
+        <div> 
             <Menu vertical>
-                <Menu.Item 
+                <Menu.Item
                     name='Ev'
                 />
                 <Menu.Item

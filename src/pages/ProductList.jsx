@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProductService from '../services/productService'
 import { Button, Card, Image } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default function ProductList() {
 
@@ -22,7 +23,7 @@ export default function ProductList() {
                                 size='medium'
                                 src='https://thumbs.dreamstime.com/z/new-product-22853660.jpg'
                             />
-                            <Card.Header>{product.productName}</Card.Header>
+                            <Card.Header><Link to={""}>{product.productName}</Link></Card.Header>
                             <Card.Meta>{product.productBrand}</Card.Meta>
                             <Card.Description>
                                 {product.productDetails}<br />
