@@ -5,14 +5,20 @@ export default function Categories() {
     return (
         <div>
             <Menu vertical>
-                <Menu.Item
-                    name='home'
+                <Menu.Item 
+                    name='Ev'
                 />
                 <Menu.Item
-                    name='messages'
+                    name='Saglik'
                 />
                 <Menu.Item
-                    name='friends'
+                    name='Elektronik'
+                />
+                <Menu.Item
+                    name='Oyun'
+                />
+                <Menu.Item
+                    name='Giyim'
                 />
             </Menu>
         </div>
