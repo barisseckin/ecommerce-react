@@ -21,9 +21,9 @@ export default function ProductList() {
                             <Image
                                 floated='right'
                                 size='medium'
-                                src='https://thumbs.dreamstime.com/z/new-product-22853660.jpg'
+                                src={product.productImageUrl}
                             />
-                            <Card.Header><Link to={""}>{product.productName}</Link></Card.Header>
+                            <Card.Header><Link to="/productDetail">{product.productName}</Link></Card.Header>
                             <Card.Meta>{product.productBrand}</Card.Meta>
                             <Card.Description>
                                 {product.productDetails}<br />

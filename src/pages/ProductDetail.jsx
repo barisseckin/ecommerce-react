@@ -1,9 +1,10 @@
 import React from 'react'
-
-export default function ProductDetail() {
+function ProductDetail() {
   return (
     <div>
         Urun Detaylari
     </div>
   )
 }
+
+export default ProductDetail

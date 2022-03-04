@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Dropdown } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 export default function CartSummary() {
   return (
@@ -9,7 +10,7 @@ export default function CartSummary() {
               <Dropdown.Item></Dropdown.Item>
               <Dropdown.Item></Dropdown.Item>
               <Dropdown.Item></Dropdown.Item>
-              <Button color='blue'>Sepete Git</Button>
+              <Link to="/cartDetail"><Button color='blue'>Sepete Git</Button></Link>
             </Dropdown.Menu>
           </Dropdown>
     </div>
