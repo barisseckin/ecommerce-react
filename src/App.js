@@ -7,6 +7,7 @@ import ProductList from "./pages/ProductList";
 import ProductDetail from "./pages/ProductDetail"
 import Campaigns from "./pages/Campaigns";
 import CartDetail from "./pages/CartDetails"
+import SignUp from "./pages/SignUp"
 
 function App() {
   return (
@@ -17,14 +18,16 @@ function App() {
           <Dashboard />
         </Container>
         <Routes>
-          <Route path="/home" element={<ProductList />} />
-          <Route path="/productDetail" element={<ProductDetail />} />
-          <Route path="/campaigns" element={<Campaigns />} />
-          <Route path="/cartDetail" element={<CartDetail />} /> 
-        </Routes>
+          <Route exact path="" element={<ProductList />} />
+          <Route exact path="/productDetail" element={<ProductDetail />} />
+          <Route exact path="/campaigns" element={<Campaigns />} />
+          <Route exact path="/cartDetail" element={<CartDetail />} /> 
+          <Route exact path="/register" element={<SignUp />} />
+        </Routes> 
       </div>
     </BrowserRouter>
   );
 }
 
 export default App;
+

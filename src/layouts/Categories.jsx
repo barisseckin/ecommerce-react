@@ -12,7 +12,7 @@ export default function Categories() {
     }, [])
 
     return (
-        <div>
+        <div className='categories'>
             <Menu vertical>
                 {
                     categories.map(categori => (

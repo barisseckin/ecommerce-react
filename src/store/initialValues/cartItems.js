@@ -1,0 +1,1 @@
+export const cartItems = [{quantitiy: 1, product: {productName: "Iphone 13"}}]

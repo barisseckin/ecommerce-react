@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import ProductService from '../services/productService'
 import { Button, Card, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import '../App.css'
+import Categories from '../layouts/Categories'
 
 export default function ProductList() {
 
@@ -13,7 +15,8 @@ export default function ProductList() {
     }, [])
 
     return (
-        <div>
+        <div className='product-card'>
+            <Categories />
             {
                 products.map(product => (
                     <Card>

@@ -20,7 +20,7 @@ export default function Navi() {
     <div>
       <Menu inverted fixed size="small">
         <Container>
-          <Link to="/home">
+          <Link to="">
             <Menu.Item name="Anasayfa" />
           </Link>
 
