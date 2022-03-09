@@ -10,7 +10,7 @@ import { toast } from 'react-toastify'
 
 export default function ProductList() {
 
-    const dispach = useDispatch()
+    const dispatch = useDispatch()
 
     const [products, setProducts] = useState([])
 
@@ -20,7 +20,7 @@ export default function ProductList() {
     }, [])
 
     const handleAddToCart = (product) => {
-        dispach(addToCart(product))
+        dispatch(addToCart(product))
         toast.success(`${product.productName} sepete eklendi`)
     }
 
@@ -40,7 +40,7 @@ export default function ProductList() {
                             <Card.Meta>{product.productBrand}</Card.Meta>
                             <Card.Description>
                                 {product.productDetails}<br />
-                                <strong>{product.productPrice}</strong>
+                                <strong>{product.productPrice + " TL"}</strong>
                             </Card.Description>
                         </Card.Content>
                         <Card.Content extra>

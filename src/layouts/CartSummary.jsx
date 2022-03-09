@@ -15,11 +15,16 @@ const {cartItems} = useSelector(state => state.cart)
             <Dropdown.Menu>
               {
                 cartItems.map((cartItem) => (
-                  <Dropdown.Item key={cartItem.product}>
+                  <Dropdown.Item key={cartItem.product}>     
+                    <Link to="/productDetail">
                     <Label>
                       {cartItem.product.productName}
                     </Label>
-                    <Image src={cartItem.product.productImageUrl}></Image>
+                    </Link>
+                    <Label>
+                      {cartItem.product.productPrice + ' TL'}
+                    </Label>
+                    <Image className='cart-image' src={cartItem.product.productImageUrl}></Image>
                   </Dropdown.Item>
                 ))
               }

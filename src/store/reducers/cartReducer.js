@@ -1,6 +1,5 @@
-import { ADD_TO_CART } from "../actions/cartActions";
+import { ADD_TO_CART, REMOVE_FROM_CART } from "../actions/cartActions";
 import { cartItems } from "../initialValues/cartItems";
-import { REMOVE_FROM_CART } from "../actions/cartActions";
 
 const initialState = {
   cartItems: cartItems,
@@ -15,7 +14,7 @@ export default function cartReducer(state = initialState, { type, payload }) {
         return {
           ...state,
         };
-      } else {
+      } else { //
         return {
           ...state,
           cartItems: [...state.cartItems, { quantitiy: 1, product: payload }],

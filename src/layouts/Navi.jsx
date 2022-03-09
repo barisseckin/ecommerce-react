@@ -5,6 +5,7 @@ import CartSummary from "./CartSummary";
 import SignedIn from "./SignedIn";
 import SignedOut from "./SignedOut";
 import { useSelector } from 'react-redux'
+import { Image } from "semantic-ui-react";
 
 export default function Navi() {
   const {cartItems} = useSelector(state => state.cart)
@@ -23,6 +24,7 @@ export default function Navi() {
     <div>
       <Menu inverted fixed size="small">
         <Container>
+          <Image src="https://icons.iconarchive.com/icons/jozef89/services-flat/32/ecommerce-icon.png"></Image>
           <Link to="">
             <Menu.Item name="Anasayfa" />
           </Link>

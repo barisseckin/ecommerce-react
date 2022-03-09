@@ -6,7 +6,7 @@ const FeedExampleBasic = () => (
   <Feed className='user-comment'>
     <Feed.Event>
       <Feed.Label>
-        <img src='/images/avatar/small/elliot.jpg' />
+        <img/>
       </Feed.Label>
       <Feed.Content>
         <Feed.Summary>
