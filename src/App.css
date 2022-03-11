@@ -41,29 +41,3 @@
   margin-top: 2em;
 }
 
-.product-card {
-  position: absolute;
-  left: 40%;
-  top: 70px;
-}
-
-.signup-form {
-  position: fixed;
-  left: 16%;
-  top: 70px;
-}
-
-.card {
-  position: flex;
-  float: left;
-}
-
-.categories {
-  position: absolute;
-  right: 130%;
-}
-
-.user-comment {
-  position: absolute;
-  right: 30%;
-}

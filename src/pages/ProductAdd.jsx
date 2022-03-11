@@ -10,8 +10,8 @@ export default function ProductAdd() {
     productName: "",
     productBrand: "",
     productDetails: "",
-    productPrice: 0,
-    stock: 0,
+    productPrice: "",
+    stock: "",
     productImageUrl: "",
   };
 
@@ -29,7 +29,6 @@ export default function ProductAdd() {
       initialValues={initialValues} 
       validationSchema={schema}
       onSubmit = {(values) => {
-          console.log(values)
           axios.post("http://localhost:8080/api/products/add", {
               "productName": values.productName,
               "productBrand": values.productBrand,

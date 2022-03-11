@@ -24,7 +24,7 @@ export default function Navi() {
     <div>
       <Menu inverted fixed size="small">
         <Container>
-          <Image src="https://icons.iconarchive.com/icons/jozef89/services-flat/32/ecommerce-icon.png"></Image>
+          <Link to="/"><Image src="https://icons.iconarchive.com/icons/jozef89/services-flat/32/ecommerce-icon.png"></Image></Link>
           <Link to="">
             <Menu.Item name="Anasayfa" />
           </Link>
