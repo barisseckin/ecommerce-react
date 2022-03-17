@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductService from "../services/productService";
-import { Button, Card, Image } from "semantic-ui-react";
+import { Button, Card, Container, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Categories from "../layouts/Categories";
@@ -29,7 +29,9 @@ export default function ProductList() {
       <Grid>
         <Grid.Row columns={2}>
           <Grid.Column width={3}>
+          <Container className="ui container">
             <Categories />
+            </Container>
           </Grid.Column>
           <Grid.Column width={13}>
 
