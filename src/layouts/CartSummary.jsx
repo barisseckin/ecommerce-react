@@ -9,8 +9,6 @@ export default function CartSummary() {
 
 const {cartItems} = useSelector(state => state.cart)
 
-  const number = 2;
-
   return (
     <div>
        <Dropdown item text='Sepet'>

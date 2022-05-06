@@ -59,7 +59,8 @@ export default function ProductList() {
                     <Button
                       basic
                       color="blue"
-                      onClick={() => handleAddToCart(product)}
+                      onClick={() => handleAddToCart(product)
+                      }
                     >
                       Sepete Ekle
                     </Button>
